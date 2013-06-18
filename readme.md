@@ -1,4 +1,1 @@
-
-# Blog
-
-The default [wintersmith](https://github.com/jnordberg/wintersmith) template
+Work in progress for new [wintersmith](https://github.com/jnordberg/wintersmith) based static site.
