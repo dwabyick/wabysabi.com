@@ -12,7 +12,7 @@ html(lang='en')
           = locals.name
       link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
       link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300')
-      link(rel='stylesheet', href='/css/main.css')
+
       link(rel='stylesheet', href='/css/icon-font.css')
   body(class=bodyclass)
     header.header
@@ -31,6 +31,12 @@ html(lang='en')
         block footer
           section.about
             !=contents['about.md'].html
+          section.social
+            a(href='http://www.twitter.com/dwabyick',target='_links').icon-twitter
+            a(href='http://www.github.com/dwabyick',target='_links').icon-github
+            a(href='http://www.linkedin.com/pub/daniel-wabyick/22/91a/454',target='_links').icon-linkedin
+            a(href='http://www.pinterest.com/dwabyick',target='_links').icon-pinterest
+            a(href='http://www.flickr.com/photos/dwabyick',target='_links').icon-flickr-2
           section.copy
             p &copy; #{ new Date().getFullYear() } #{ locals.owner } &mdash; powered by&nbsp;
               a(href='https://github.com/jnordberg/wintersmith') Wintersmith
